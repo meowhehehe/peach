@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/images/logo.png">
+    <title>Meow</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__row container">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"><span></span></label>
+            <div class="logo-container">
+                <a href="index.html"><img src="media/images/logo.png" alt="" class="logo__img"></a>
+                <a href="index.html"><p class="logo__txt">Золотой ключ</p></a> 
+            </div>
+            <div class="header__panel container">
+                <nav class="menu">
+                    
+                    <ul class="menu__list">
+                        <li><a href="about-us.html" class="menu__link">О нас</a></li>
+                        <li><a href="index.html " class="menu__link">Аренда квартир</a></li>
+                        <li><a href="legal.html" class="menu__link">Юридическая справка</a></li>
+                        <li><a href="place.html" class="menu__link">Где нас найти?</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__btn">
+                <a href="auth.html" class="menu__link">Вход</a>
+                <a href="reg.html" class="menu__link">Регистрация</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <form action="" class="auth-container">
+            <div class="form-column">
+                <label for="login">Логин</label>
+                <input class="form__cell" type="text" id="login" required>
+            </div>
+            <div class="form-column">
+                <label for="password">Пароль</label>
+                <input class="form__cell" type="password" id="password" required>
+            </div>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/images/logo.png">
+    <title>Meow</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__row container">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"><span></span></label>
+            <div class="logo-container">
+                <a href="index.html"><img src="media/images/logo.png" alt="" class="logo__img"></a>
+                <a href="index.html"><p class="logo__txt">Золотой ключ</p></a> 
+            </div>
+            <div class="header__panel container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="about-us.html" class="menu__link">О нас</a></li>
+                        <li><a href="index.html " class="menu__link">Аренда квартир</a></li>
+                        <li><a href="legal.html" class="menu__link">Юридическая справка</a></li>
+                        <li><a href="place.html" class="menu__link">Где нас найти?</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__btn">
+                <a href="auth.html" class="menu__link">Вход</a>
+                <a href="reg.html" class="menu__link">Регистрация</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <form action="" class="apart-container">
+            <div class="">
+                <div class="form-row">
+                    <label for="room">Количество комнат</label>
+                    <select name="room" id="room" required>
+                        <option value="studio">Студия</option>
+                        <option value="1-room">1-комнатная</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="wall">Тип дома (стен):</label>
+                    <select name="wall" id="wall" required>
+                        <option value="brick">кирпичный</option>
+                        <option value="monolith">монолит</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="square">Общая площадь, м2:</label>
+                    <input class="form__cell num" type="number" id="square" required min="1">
+                </div>
+                <div class="form-row">
+                    <label for="floor">Этаж:</label>
+                    <input class="form__cell num" type="number" id="floor" required min="-1">
+                </div>
+                <div class="form-row">
+                    <label for="floorTotal">Этажей в доме:</label>
+                    <input class="form__cell num" type="number" id="floorTotal" required min="1">
+                </div>
+                <div class="form-row">
+                    <label for="furniture">Мебель</label>
+                    <select name="furniture" id="furniture" required>
+                        <option value="true">Да</option>
+                        <option value="false">Нет</option>
+                    </select>
+                </div>
+                <div class="form-column">
+                    <label for="desc">Описание</label>
+                    <textarea class="form__cell textarea" required id="desc"></textarea>
+                </div>
+                <button class="btn" type="submit">Отправить</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
