@@ -401,9 +401,9 @@ label{
         width: 70%;
     }
 }
-@media(max-width:320px){
+@media(max-width:480px){
     .container{
-       max-width: 300px;
+       max-width: 320px;
        margin: 0 auto;
     }
     .logo__txt{
@@ -419,11 +419,12 @@ label{
         top: 50px;
         position: absolute;
         align-items: center;
-        transition: .3s;
         background-color: #f6f7f8;
         padding: 7px;
         text-align: start;
         width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #ececec;
     }
     .burger-checkbox:checked ~ .header__btn{
         display: flex;
@@ -453,7 +454,15 @@ label{
         width: 100%;
     }
     .header__row{
-        justify-content: start;
-        margin-left: -10px;
+        display: flex;
+    }
+    .logo__img{
+        margin-left: -30px;
+    }
+    .menu{
+        width: 100%;
+    }
+    .header__panel{
+        width: 100%;
     }
 }
