@@ -466,3 +466,42 @@ label{
         width: 100%;
     }
 }
+.modalW{
+    width: 350px;
+    height: 200px;
+    background-color: rgb(243, 221, 225);
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 3px dotted pink;
+    display: none;
+}
+.cross{
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 16px;
+    color: pink;
+    background-color: white;
+    transition: 0.3s;
+
+}
+.cross:hover{
+    background-color: pink;
+    transition: 0.3s;
+    color: white;
+}
+.modalGif{
+    width: 350px;
+    height: 200px;
+}
+#key{
+    cursor: pointer;
+}
